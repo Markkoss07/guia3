@@ -1,0 +1,48 @@
+/*En el AND tiene que haber un falso para que me de un falso es decir:
+    falso && verdadero  = verdadero
+
+    En el caso de or (||) tiene que por lo menos tener un verdadero
+
+    asumiendo que
+*/
+#include <iostream>
+using namespace std;
+
+int main (){
+int nota;
+int aprobados = 0;
+
+//Este for solo sirve para repetir, el objetivo sirve para ingresar las 25 notas.
+for(int i= 1; i <= 25; i++){
+    cout << "Ingrese nota"<< i << ": ";
+    cin >> nota;
+
+    if (nota >= 6){
+        aprobados ++;
+    }
+    /* este if sirve contar la cantidad de aprobados, con 6 o mas
+    */
+}
+
+    cout << "La cantidad de aprobados es: " << aprobados << endl;
+    if (aprobados <= 12){
+        cout << "Necesita repasar el tema" << endl;
+    }
+    //El objetivo de esta condicion es ver si el 50% de los alumnos desaprobaron
+    // aprobaron.
+
+
+
+/*WHILE: (mientras) 
+ciclo innexacto depende de una condicion, de un valor:  valor sentinela. Es un valor que
+nosotros estamos vigilando para ver cuando ocurre. 
+
+Lo que cambia con el for que esta condicion que pregunte el while, siempre tiene una
+variable a diferencia del for (se puede modificar), tengo que poner una expresición 
+logica. 
+ 
+
+*/
+
+return 0;
+}
