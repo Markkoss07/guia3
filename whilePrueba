@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+
+/*Pasamos el ejercicio anterior a while. En este caso no se pone un numero definido
+de alumnos. sino que nosotros paramos el while: Ingresando 0
+*/
+
+int main (){
+int cant = 0; // para cambiar la palabra en todos los lugares donde aparece;
+            // clip derecho en la palabra a modificar y refactor, rename symbols.
+int cantNotas = 0;
+int nota;
+
+cout << "Ingrese nota: ";
+cin >> nota;
+
+while (nota != 0){
+    cantNotas++;
+    if(nota >= 6){
+        cant++;
+    }
+
+    cout << "Ingrese nota: ";
+    cin >> nota;
+}
+
+cout << "La cantidad de aprobados es: " << cant << endl;
+
+if(cant <= (cantNotas / 2)){
+    cout << "Se debe repasar el tema" << endl;
+}
+
+return 0;
+}
