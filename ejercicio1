@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+/*
+Hacer un programa para mostrar por pantalla los números del 1 al 10.
+Importante: El programa no tiene ningún ingreso de datos.
+Nota: Probarlo con For y con While.
+*/
+
+int main(){
+int num = 1;
+
+cout << "Este es con FOR" << endl;
+for(int numero = 1; numero <= 10; numero++){
+    cout << numero << endl;
+}
+
+cout << "Este es con While" << endl;
+while( num <=10){
+    cout << num << endl;
+    num++;
+}
+return 0;
+}
