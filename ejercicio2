@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+/*Hacer un programa para mostrar por pantalla los números del 20 al 1 en orden
+decreciente.
+Importante: El programa no tiene ningún ingreso de datos.
+Nota: Probarlo con For y con While.*/
+
+int main(){
+int num = 20;
+
+for(int numero = 20; numero >= 1; numero--){
+    cout << numero << endl;
+}
+
+while( num >=1){
+    cout << num << endl;
+    num--;
+}
+
+return 0;
+}
