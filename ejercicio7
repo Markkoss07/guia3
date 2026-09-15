@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+/*Hacer un programa para ingresar una lista de números que finaliza cuando se
+ingresa un cero, luego informar cuántos son positivos y cuántos son negativos.
+Ejemplo: 4, -3, 8, -5, 18, 20, 0. Se listará Positivos: 4 Negativos: 2.
+*/
+
+int main (){
+int numeros, positivos = 0, negativos = 0;
+
+cout << "Ingrese un numero: ";
+cin >> numeros;
+
+while (numeros != 0){
+
+    if(numeros > 0){
+        positivos++;
+    }
+    if(numeros < 0){
+        negativos++;
+    }
+
+    cout << "Ingrese un numero(finalizar operacion = 0): ";
+    cin >> numeros;
+}
+
+cout << "La cantidad de Positivos es: " << positivos << endl;
+cout << "La cantidad de Negativos es: " << negativos << endl;
+
+return 0;
+}
