@@ -1,0 +1,40 @@
+#include <iostream>
+using namespace std;
+
+/*Hacer un programa para ingresar una lista de 10 números, luego informar el
+porcentaje de positivos, negativos, y ceros.
+*/
+
+int main (){
+int numeros, positivos = 0, negativos = 0, ceros = 0;
+float porcentajePo, porcentajeNe, porcentajeCeros;
+
+
+for (int i = 1; i <= 10; i++){
+    cout << "Ingresar un numero: ";
+    cin >> numeros;
+
+    if (numeros > 0){
+        positivos++;
+        
+    }
+
+    if (numeros < 0){
+        negativos++;
+        
+    }
+    if(numeros == 0){
+        ceros++;
+    }
+
+}
+porcentajePo = (float) positivos / 10 * 100;
+porcentajeNe = (float) negativos / 10 * 100;
+porcentajeCeros = (float) ceros / 10 * 100;
+
+cout << "El porcentaje de positivos es: " << porcentajePo<< "%" << endl;
+cout << "El porcentaje de Negativos es: " << porcentajeNe << "%"<< endl;
+cout << "El porcentaje de Ceros es: " << porcentajeCeros << "%"<< endl;
+
+return 0;
+}
