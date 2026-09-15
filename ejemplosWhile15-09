@@ -1,0 +1,56 @@
+#include <iostream>
+using namespace std;
+int main (){
+            //EJMPLO 1
+/*float precio, totalVenta = 0.0f;
+int cant = 0;
+
+cout << "Ingrese el precio del producto: $";
+cin >> precio;
+
+while(precio != 0){//el cero no me interesa para finalizar, no para otra cosa
+        //no interesa como dato, sino para finalizar el programa.
+    totalVenta += precio; //totalVenta = totalVenta + precio; es lo mismo
+    cant++;
+
+    //si no tendría mi cout y cin, el porgrama while nunca cortaria
+    cout << "Ingrese el precio del producto: $";
+    cin >> precio;
+
+}
+cout << "Total de la venta: " << totalVenta << endl;
+cout << "Cantidad productos: " << cant << endl;
+*/
+                //EJEMPLO2
+const int COSTO_VIAJE = 600000;
+int cantDeposito = 0;
+float deposito, ahorro = 0.0f;
+
+//En este caso se puede usar el Do while
+/*No siempre se requiere utilizar el Do While, ya que se utiliza en
+el caso de que nuestra variable principal se este modificando en las
+intrucciones*/
+/*do{
+    cout << "Ingrese deposito: $";
+    cin >> deposito;
+
+    ahorro += deposito;
+    cantDeposito++;
+
+}while(ahorro < COSTO_VIAJE)
+*/
+
+while (ahorro < COSTO_VIAJE){
+    cout << "Ingrese deposito: $";
+    cin >> deposito;
+
+    ahorro += deposito;
+    cantDeposito++;
+
+}
+
+cout << "Objetivo cumplido! Ahorraste: $"<< ahorro << endl;
+cout << "Cantidad de depositos: " << cantDeposito << endl;
+
+return 0;
+}
