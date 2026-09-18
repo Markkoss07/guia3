@@ -1,0 +1,92 @@
+#include <iostream>
+using namespace std;
+
+/*Hacer un programa donde se ingrese las notas de alumnos de un curso,
+en fin de la carga de notas se establece con una nota = 0. Informar de los
+alumnos aprobados la nota mas alta.
+*/
+
+int main (){
+/*int numero,desaprobados = 0, aprobados = 0, maximo, minimo;
+
+cout << "Ingresar la nota: ";
+    cin >> numero;
+
+while(numero != 0){
+
+    if (numero >= 1 && numero < 6){
+            desaprobados++;
+        //cout << "Desaprobado" << endl;
+    }else if (numero >= 6 && numero <= 10){
+        aprobados++;
+        //cout << "Aprobado" << endl;
+    }else{
+        cout << "error de ingreso" << endl;
+    }
+
+
+    cout << "Ingresar la nota: ";
+    cin >> numero;
+}
+
+if (numero > maximo && numero >= 6){
+        maximo = numero;
+        cout << "La nota mas alta de aprobados es: " << maximo << endl;
+    }else{
+        cout << "Desaprobaron todos" << endl;
+    }
+*/
+int nota, maximo;
+
+cout << "Ingresar la nota: ";
+cin >> nota;
+
+while (nota != 0){
+    if (nota >= 6 && nota > maximo && nota <= 10 ){
+            maximo = nota;
+        }
+        cin >> nota;
+
+
+cout << "Ingresar la nota: ";
+cin >> nota;
+
+}
+if(maximo > 0){
+        cout << "La nota mayor de los aprobados es: " << maximo << endl;
+}else{
+        cout << "No hubo aprobados" << endl;
+}
+
+
+
+
+/*Hacer un programa donde ingresen las notas de 10 cursos, las notas de
+10 cursos, las notas de cada curso se cargan agrupadas. para indicar el
+fin de carga de un curso la nota = 0. Mostrar por cada curso, la nota mas
+alta de los aprobados.
+
+int nota, maximo;
+
+for (int i = 1; i <= 2; i++){
+    cout << "El curso: " << i << endl;
+    cout << "Ingrese nota: " << endl;
+    cin >> nota;
+
+    while (nota != 0){
+        if (nota >= 6 && nota > maximo && nota <= 10 ){
+            maximo = nota;
+        }
+        cin >> nota;
+    }
+
+    if(maximo > 0){
+        cout << "La nota mayor de los aprobados es: " << maximo << endl;
+    }else{
+        cout << "No hubo aprobados" << endl;
+    }
+}
+
+*/
+return 0;
+}
