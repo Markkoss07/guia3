@@ -1,0 +1,82 @@
+#include <iostream>
+using namespace std;
+            //enunciado 1
+/*Una empresa de reparación de celulares registró las reparaciones 
+realizadas por sus 5 técnicos el día de hoy. Cada técnico repara 10 
+dispositivos por día. Por cada reparación se registró:
+- Legajo del técnico (entero de dos digitos)
+- Duración de la reparación en minutos (entero)
+- Cantidad de insumos necesarios (entero)
+La información se encuentra agrupada por técnico.
+Se pide calcular e informar:
+
+A) Por cada técnico, el tiempo total dedicado a la reparación en el día.
+B) Por cada técnico, la cantidad de reparaciones que no requirieron insumos.
+C) El total de reparaciones que hayan demorado más de dos horas
+*/
+
+/*los registros que hay; 10 reg X tecnico. Entonces son 50 registros en 
+total. "La agrupacion se encuentra agrupada por tecnico": nos da indicio que 
+por cada tecnico van a estar los 10 registros y sigue con el otro tecnico 
+sucesivamente. 
+por c/ tecnico, el tiempo total dedicado por dia:
+5 veces, Nro Técnico : xx, tiempo total: xx
+Lo mismo para la cantidad de reparaciones.
+Y por ultimo el total de reparaciones q demoraron mas de dos horas: Una sola vez
+Los legajos son de dos digitos pero no es que va a hacer 12, 13, 14.. sino que
+puede ser cualquier numero de dos digitos 66,23, 56... POR ESTO NO SE PUEDE 
+USAR UN switch.
+
+*/            
+    
+int main (){
+int tec, celu, duracion, insumos, legajo;
+const int TECNICOS = 5;
+const int REPARACIONES = 10; 
+
+
+for (){
+    
+}
+
+
+
+return 0;
+}            
+
+//Enunciado 2
+/*Una empresa de reparación de celulares registró las reparaciones realizadas
+ por sus técnicos el día de hoy. Cada técnico pudo haber reparado una diferente
+  cantidad de dispositivos. Por cada reparación se registró:
+- Legajo del técnico (entero de dos digitos)
+- Duración de la reparación en minutos (entero)
+- Cantidad de insumos necesarios (entero)
+
+La información se encuentra agrupada por técnico. Para indicar el fin de la 
+carga de datos de un técnico se ingresa un legajo distinto al del técnico 
+anterior.
+Para indicar el fin de la carga de datos se ingresa un número de legajo igual 
+a cero.
+
+Se pide calcular e informar:
+
+A) Por cada técnico, el tiempo total dedicado a la reparación en el día.
+B) Por cada técnico, la cantidad de reparaciones que no requirieron insumos.
+C) El total de reparaciones que hayan demorado más de dos horas.
+*/
+
+
+/*Al ejercicio anterior no cambia mucho sino que, no tenemos datos de los 
+tecnicos o de los dispositivos que se reparan
+puntos claves: "Cada tecnico pudo haber reparado una dirente cantidad de 
+dispositivos", "la información se encuentra por teécnico. para iniciar el fin 
+de la carga de datos de un tecnico. un legajo distinto al del tecnico anterior."
+"indicar el fin de carga de datos, numero de legajo igual a cero."
+
+?? cantidad de tecnicos
+??cantidad de reparaciones x tecnicos
+??cantidad registros
+ya no se usan datos homogeneos ya que no tenemos toda la cantidad de rep para los
+tecnicos.
+ 
+*/
