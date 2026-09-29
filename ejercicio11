@@ -1,0 +1,56 @@
+#include <iostream>
+using namespace std;
+
+/*Hacer un programa para ingresar una lista de 10 números, luego informar el
+máximo de los negativos y el mínimo de los positivos.
+Ejemplo A: 10, 20, -5, 30,-15, 3, 42, 0, 22, -13.
+Se listará:
+Máximo de los negativos: -5.
+Mínimo de los positivos: 3.
+Ejemplo B: 10, 20, 5, 30, 15, 5, 42, 8, 22, 13.
+Se listará:
+Máximo de los negativos: No hay negativos.
+Mínimo de los positivos: 5.
+*/
+
+int main(){
+int numero, maximoNegativos, minimoPositivos;
+bool hayNegativos = false;
+bool hayPositivos = false;
+
+for (int i = 1; i <= 6; i++) {
+    cout << "Ingresar numero " << i << ": ";
+    cin >> numero;
+
+    if (numero < 0) {
+        if (!hayNegativos) {
+            maximoNegativos = numero;
+            hayNegativos = true;
+        } else if (numero > maximoNegativos) {
+                maximoNegativos = numero;
+        }
+    } else if (numero > 0) {
+        if (!hayPositivos) {
+            minimoPositivos = numero;
+            hayPositivos = true;
+        } else if (numero < minimoPositivos) {
+            minimoPositivos = numero;
+        }
+    }
+        // Si numero == 0, no se lo considera ni positivo ni negativo, se ignora
+}
+
+if (hayNegativos) {
+    cout << "Maximo de los negativos: " << maximoNegativos << endl;
+} else {
+    cout << "Maximo de los negativos: No hay negativos." << endl;
+}
+
+if (hayPositivos) {
+    cout << "Minimo de los positivos: " << minimoPositivos << endl;
+} else {
+    cout << "Minimo de los positivos: No hay positivos." << endl;
+}
+
+return 0;
+}
