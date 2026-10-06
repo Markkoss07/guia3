@@ -1,0 +1,58 @@
+#include <iostream>
+using namespace std;
+
+/*Hacer una función llamada EsPar que determine si un número es par o no. La
+función debe recibir un número entero por valor y devolver true si es par o false
+si no lo es. La función no debe mostrar nada por pantalla.
+Hacer un programa para ingresar un número y, utilizando EsPar, emita luego un
+cartel indicando si el número ingresado es par o no es par.
+*/
+
+/**
+    // esta es la forma mas completa de una funcion:
+    tipo nombre (tipo nom1,  tipo nom2){
+        cuerpo
+        return valor;
+    }
+
+
+*/
+// funcion que no reciba parametros y tampoco devuelta valor
+void Linea(){ // esta funcion no esta devolviendo nada pero si esta mostrando mi cout
+    //cout << "-------" << endl;
+    for (int i = 1; i < 10; i++){
+        cout << (char)196;
+    }
+    cout << endl;
+    /*La tarea que tiene la funcion es su RESPONSABILIDAD que se cumpla la
+    tarea ordenada.
+    siempre que hay que implementar hay que ponerles las llaves para que esa
+    funcion sepa que tarea tiene que hacar. Pero la tarea en su tiene una
+    RESPONSABILIDAD que se tiene que cumplir.
+    Una funcion tiene una tarea pero a su vez tiene una responsabilida que cumplir.
+    */
+}
+
+
+//Funcion que recibe parametros pero no devuelve valores.
+void Saludar(string nombre){
+    cout << "Hola " << nombre << " estan re facheros " <<  endl;
+}
+/*void Saludar(){
+    cout << "Hola Abel!" << endl;
+}*/ // lo toma como error porq hay dos con el mismo nombre
+
+int main () {   // main es nuestra funcion principal, el punto de entrada.
+
+Linea();//para poder configurar la linea recta y no espaciada. buscamos en ASCII
+        // y la aplicamos con ALT + nuestro codigo.
+//Esto no se va a mostrar como queremos por el set de caracteres diferentes a nuestro programa
+//como le digo a la consola que me dibuje una linea recta. (__)
+//lo modificamos como un char en nuestra funcion, para que lo muestre la terminal.
+Linea();
+Saludar("Brian!");
+Saludar("Abel!");
+
+
+return 0;
+}
