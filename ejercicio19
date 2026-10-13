@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+/*Hacer un programa para ingresar una lista de números que finaliza cuando se
+ingresa un cero, luego informar el promedio de los números negativos.
+En caso de no haber números negativos en la lista indicar “No se puede calcular
+el promedio”.
+*/
+
+int main(){
+int numero, cantNegativos = 0, sumaNegativos = 0;
+
+cout << "Ingresa un numero: ";
+cin >> numero;
+
+while (numero != 0){
+    if (numero < 0){
+        cantNegativos++;
+        sumaNegativos = sumaNegativos + numero;
+    }
+
+    cout << "Ingresa un numero: ";
+    cin >> numero;
+}
+
+if (cantNegativos > 0) {
+        cout << "Promedio de negativos: " << (float)sumaNegativos / cantNegativos << endl;
+    } else {
+        cout << "No se puede calcular el promedio" << endl;
+    }
+
+return 0;
+}
