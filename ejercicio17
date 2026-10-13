@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+
+/*.Dada una lista de números que finaliza cuando se ingresa un cero, informar cuál
+es el primer y segundo número impar ingresado.
+Ejemplo: 8, 4, 5, 6, -9, 5, 7, 0 se informa 5 y -9.
+*/
+
+int main(){
+int numero;
+int cantImpares = 0, primero = 0, segundo = 0;
+
+cout << "Ingresar numero: ";
+cin >> numero;
+
+while (numero != 0){
+    if (numero % 2 != 0){
+        cantImpares++;
+
+        if (cantImpares == 1){
+            primero = numero;
+        }else if (cantImpares == 2){
+            segundo = numero;
+        }
+    }
+
+    cout << "Ingresar numero: ";
+    cin >> numero;
+}
+
+if (cantImpares >= 2) {
+        cout << "Primer impar: " << primero << endl;
+        cout << "Segundo impar: " << segundo << endl;
+    } else {
+        cout << "No se ingresaron al menos dos numeros impares" << endl;
+    }
+
+return 0;
+}
