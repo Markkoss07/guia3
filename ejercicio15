@@ -1,0 +1,50 @@
+#include <iostream>
+using namespace std;
+
+/*Hacer un programa para ingresar una lista de números que corta cuando se
+ingresa un cero.
+Emitir en pantalla cuántos de esos números son pares y cuántos de esos
+números son primos
+*/
+
+int main(){
+int num, cantPares = 0, cantPrimos = 0;
+
+
+cout << "Ingresar un numero: ";
+cin >> num;
+
+
+while (num != 0){
+
+    if (num % 2 == 0 ){
+        cantPares++;
+    }
+
+    bool primo = true;
+
+    if (num < 2){
+        primo = false;
+    }else{
+        for (int i = 2; i < num; i++) {
+            if (num % i == 0) {
+                primo = false;
+            }
+        }
+    }
+
+    if (primo){
+      cantPrimos++;
+    }
+
+    cout << "Ingresar un numero: ";
+    cin >> num;
+}
+cout << "Cantidad de numeros pares: " << cantPares << endl;
+cout << "Cantidad de numeros primos: " << cantPrimos << endl;
+
+
+
+
+return 0;
+}
